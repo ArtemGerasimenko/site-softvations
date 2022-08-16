@@ -1,0 +1,469 @@
+//===============Шрифты===============//
+@import url();
+//==========Обнуление стилей==========//
+@import "nullstyle.scss";
+//===========Основные стили===========//
+@import "mainstyle.scss";
+//==============Миксины===============//
+@mixin title($fz,$fw,$lh,$c) { //Применение @include title(50, 400, 130%, #fff)
+	font-size: $fz;
+	font-weight: $fw;
+	line-height: $lh;
+	color: $c;
+}
+//==============Шаблоны===============//
+%tille { //Применение @extend %title; (свойста будут основными вверху)
+	font-size: 50px;
+	font-weight: 400;
+	line-height: 130%;
+}
+//============Переменные==============//
+$fz: 50px; //Применение font-size: $fz; color: $c; backraund-color: $bgc;
+$c: #fff;
+$bgc: #333;
+
+//====================HEADER====================//
+
+//=====================HERO=====================//
+
+//===================NOMINATE===================//
+
+//===================TRAINING===================//
+
+//=====================NEWS=====================//
+
+//====================CONTACT===================//
+
+//====================FOOTER====================//
+
+
+//====================HEADER====================//
+.header {
+	&__container {
+	width: 100%;
+	height: 85px;
+	display: flex;
+	align-items: center;
+	}
+	&__logo {}
+	&__logo-img {}
+}
+
+//=====================HERO=====================//
+.hero {
+	&__container {
+		position: relative;
+	}
+	&__body {
+		display: flex;
+		margin-top: 50px;
+	}
+	&__title {
+		font-size: 66px;
+		font-weight: 700;
+		line-height: 116%;
+	}
+	&__title--green {
+		color: #32E522;
+	}
+	&__text {
+		margin-top: 30px;
+		font-size: 24px;
+		line-height: 130%;
+	}
+	&__button {
+		margin-top: 30px;
+	}
+	&__button-link {
+		width: 170px;
+		height: 60px;
+		border-radius: 15px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 60px;
+		color: #1B252F;
+		text-align: center;
+		background-color: #32E622;
+		transition: all 0.2s linear;
+		&:hover{
+			background-color: #4DFF3D;
+		}
+	}
+	&__image {
+		width: 810px;
+		overflow: hidden;
+		position: absolute;
+		top: -135px;
+		right: -150px;
+	}
+	&__image-img {
+		border-radius: 15px;
+	}
+}
+.hero-text {
+	&__body {
+		width: 520px;
+	}
+}
+
+//===================ADVANTAGES===================//
+.advantages {
+	margin-top: 120px;
+	&__container {}
+	&__columns {
+		display: flex;
+	}
+}
+.column {
+	&__content {
+		width: 430px;
+		&:nth-child(2){
+			border-left: 1px solid #fff;
+			border-right: 1px solid #fff;
+		}
+	}
+	&__content-top {
+		display: flex;
+		justify-content: space-between;
+		padding: 45px;
+		border-bottom: 1px solid #fff;
+	}
+	&__content-icon {}
+	&__content-title {
+		width: 240px;
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 120%;
+		color: #32E622;
+	}
+	&__content-text {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 130%;
+		padding: 55px;
+		text-align: justify;
+	}
+}
+
+//===================TESTIMONATS===================//
+.testimonats {
+	margin-top: 120px;
+	&__container {}
+	&__body {
+		background-color: #32E622;
+		border-radius: 15px;
+		padding: 50px 110px;
+	}
+	&__suptitle {
+		font-size: 24px;
+		line-height: 130%;
+		text-align: center;
+	}
+	&__quitation {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 0;
+		border-bottom: 1px solid #1B252F;
+	}
+	&__description {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 30px;
+	}
+}
+.quitation {
+	&__brachet-left {}
+	&__title {
+		font-size: 30px;
+		font-weight: 700;
+		color: #1B252F;
+		text-align: center;
+	}
+	&__brachet-right {}
+}
+.description {
+	&__text {
+		width: 200px;
+		font-size: 18px;
+		line-height: 130%;
+	}
+	&__logos {
+		width: 450px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.logo {
+	&__vectra {}
+	&__aufdecker {}
+	&__avus {}
+}
+
+//====================FAQS===================//
+.faqs {
+	margin-top: 120px;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__text-body {
+		width: 330px;
+		margin-top: 100px;
+	}
+	&__title {
+		font-size: 66px;
+		font-weight: 700;
+		line-height: 120%;
+		color: #32E522;
+	}
+	&__subtitle {
+		font-size: 24px;
+		line-height: 130%;
+		margin-top: 30px;
+	}
+	&__button {
+		margin-top: 30px;
+	}
+	&__button-link {
+		width: 170px;
+		height: 60px;
+		border-radius: 15px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 60px;
+		color: #fff;
+		text-align: center;
+		border: 1px solid #32E622;
+		transition: all 0.2s linear;
+		&:hover{
+			background-color: #32E622;
+			color: #1B252F;
+		}
+	}
+	&__qustions {
+		width: 740px;
+	}
+}
+.qustions {
+	&__title {
+		font-size: 24px;
+		line-height: 130%;
+		padding: 30px 50px;
+		overflow: hidden;
+		transition: all 0.3s ease;
+		&:not(:last-child){
+			border-bottom: 1px solid #fff;
+		}
+	}
+	&__title-h4 {
+		position: relative;
+		cursor: pointer;
+		&::before, &::after {
+			content: "";
+			width: 28px;
+			height: 1px;
+			background-color: #32E622;
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transition: all 0.3s ease;
+		}
+		&::before{}
+		&::after{
+			transform: rotate(90deg);
+		}
+	}
+	&__answer {
+		color: #32E622;
+		height: 0;
+		transition: all 0.5s ease-in-out 0.0s;
+	}
+	&__answer-text {
+		opacity: 0;
+		transform: translateY(120px);
+		transition: all 0.5s ease-in-out 0.0s;
+	}
+}
+.title--active::before {
+	transform: rotate(-45deg);
+}
+.title--active::after {
+	transform: rotate(45deg);
+}
+.answer--active {
+	height: 93px;
+	margin-top: 20px;
+}
+.text--active {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+//=====================BLOG=====================//
+.blog {
+	margin-top: 120px;
+	&__container {}
+	&__content {
+		height: 100%;
+		display: flex;
+		position: relative;
+	}
+	&__item {
+		width: 520px;
+		&:nth-child(2){
+			margin-left: 30px;
+		}
+	}
+	&__item-img {
+		border-radius: 15px;
+	}
+	&__item-title {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 130%;
+		color: #32E622;
+		margin-top: 20px;
+	}
+	&__item-text {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 130%;
+		margin-top: 20px;
+	}
+	&__item-link {
+		color: #32E522;
+	}
+	&__title {
+		font-size: 66px;
+		font-weight: 700;
+		line-height: 120%;
+		color: #32E522;
+		position: absolute;
+		top: 80px;
+		right: 0;
+	}
+}
+
+//====================CONTACT===================//
+.contact {
+	margin-top: 120px;
+	padding: 60px 0;
+	background-color: #293947;
+	position: relative;
+	&__container {}
+	&__body {
+	}
+	&__form {
+		width: 520px;
+	}
+	&__image {}
+	&__image-img {
+		width: 524px;
+		position: absolute;
+		top: -70px;
+		left: 50%;
+	}
+}
+.form {
+	&__title {
+		width: 365px;
+		font-size: 66px;
+		font-weight: 700;
+		line-height: 116%;
+		color: #32E622;
+		margin-bottom: 57px;
+	}
+	&__group {
+		position: relative;
+		margin-bottom: 30px;
+	}
+	&__input {
+		width: 100%;
+		border-bottom: 1px solid #fff;
+		background-color: transparent;
+		font-size: 18px;
+		color: #fff;
+		padding: 0 0 10px 20px;
+		transition: all 0.3s ease;
+
+		&:focus ~ .form__label,
+		&:not(:placeholder-shown) ~ .form__label{
+			top: -18px;
+			font-size: 12px;
+			color: #32E522;
+		}
+	}
+	&__label {
+		position: absolute;
+		top: 0;
+		left: 20px;
+		z-index: 1;
+		transition: all 0.3s ease;
+	}
+	&__button {
+		width: 170px;
+		height: 60px;
+		border-radius: 15px;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 60px;
+		color: #1B252F;
+		background-color: #32E622;
+		margin-top: 10px;
+		transition: all 0.2s linear;
+		&:hover{
+			background-color: #4DFF3D;
+		}
+	}
+}
+
+//====================FOOTER====================//
+.footer {
+	&__container {}
+	&__body {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin: 60px 0;
+	}
+	&__logo {}
+	&__logo-img {}
+	&__linked {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	&__linked-img {}
+	&__content {
+		width: 850px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 220px;
+	}
+	&__item-title {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 130%;
+		margin-bottom: 20px;
+	}
+	&__item-link a {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		color: #fff;
+		transition: all 0.3s linear;
+		&:hover{
+			text-decoration: underline;
+			transition: all 0.3s linear;
+		}
+	}
+	&__item-text {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 150%;
+		color: #fff;
+	}
+}

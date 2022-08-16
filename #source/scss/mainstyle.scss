@@ -1,0 +1,24 @@
+body{
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1B252F;
+}
+
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page{
+  flex: 1 1 auto;
+}
+
+[class*="__container"]{
+  max-width: 1290px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: content-box;
+}
