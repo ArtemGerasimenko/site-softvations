@@ -135,7 +135,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  margin-top: 125px;
 }
 .hero__title {
   font-size: 66px;
@@ -173,7 +173,7 @@ body {
   width: 810px;
   overflow: hidden;
   position: absolute;
-  top: -135px;
+  top: -210px;
   right: -150px;
 }
 .hero__image-img {
